@@ -19,7 +19,7 @@ const Banner = () => {
         world-class Programmer.
       </p>
       <div className="flex gap-6">
-        <button className="btn btn-color">Explore Now</button>
+        <button className="btn btn-color border-none">Explore Now</button>
         <button className="btn btn-outline text-white hover:bg-btnBg hover:text-darkShade">
           Our Feedback
         </button>

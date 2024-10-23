@@ -11,7 +11,7 @@
       "100 g broccoli"
     ],
     "preparing_time": 25,
-    "calories": "350 calories"
+    "calories": 350
   },
   {
     "recipe_img": "https://images.unsplash.com/photo-1588013273468-315fd88ea34c?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -25,7 +25,7 @@
       "50 g Parmesan cheese"
     ],
     "preparing_time": 20,
-    "calories": "400 calories"
+    "calories": 400
   },
   {
     "recipe_img": "https://plus.unsplash.com/premium_photo-1694506375078-792776cef19d?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -39,7 +39,7 @@
       "150 g coconut milk"
     ],
     "preparing_time": 35,
-    "calories": "320 calories"
+    "calories": 320
   },
   {
     "recipe_img": "https://plus.unsplash.com/premium_photo-1723733592192-6cd40ef2bd1b?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -53,7 +53,7 @@
       "10 g fresh dill"
     ],
     "preparing_time": 30,
-    "calories": "450 calories"
+    "calories": 450
   },
   {
     "recipe_img": "https://plus.unsplash.com/premium_photo-1661730314652-911662c0d86e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -67,7 +67,7 @@
       "100 g cheddar cheese"
     ],
     "preparing_time": 20,
-    "calories": "380 calories"
+    "calories": 380
   },
   {
     "recipe_img": "https://images.unsplash.com/photo-1584278858944-7c34f1d94db0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -76,6 +76,6 @@
     "short_description": "Light and fluffy pancakes perfect for breakfast or brunch.",
     "ingredients": ["200 g flour", "2 eggs", "300 ml milk", "30 g sugar"],
     "preparing_time": 15,
-    "calories": "290 calories"
+    "calories": 290
   }
 ]

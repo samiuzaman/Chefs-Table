@@ -17,6 +17,9 @@ export default {
         Lexend: ["Lexend", "sans-serif"],
         FiraSans: ["Fira Sans", "sans-serif"],
       },
+      width: {
+        sidebar: ["685px"],
+      },
     },
   },
   // eslint-disable-next-line no-undef

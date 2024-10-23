@@ -1,8 +1,9 @@
+import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { CiStopwatch } from "react-icons/ci";
 import { HiOutlineFire } from "react-icons/hi2";
 
-const Card = () => {
+const Card = ({ addRecipeToQueue }) => {
   const [cards, setCards] = useState([]);
   useEffect(() => {
     fetch("recipe.json")
@@ -10,8 +11,8 @@ const Card = () => {
       .then((data) => setCards(data));
   }, []);
   return (
-    <div className="md:w-2/3">
-      <div className="grid grid-cols-2 gap-y-6">
+    <div className="w-2/3 mx-auto">
+      <div className="grid grid-cols-2 justify-items-center gap-5">
         {cards.map((card) => (
           <div
             key={card.recipe_id}
@@ -25,13 +26,19 @@ const Card = () => {
               />
             </figure>
             <div className="mt-5">
-              <h3 className="card-title mb-4 text-dark2 text-xl font-semibold">{card.recipe_name}</h3>
-              <p className="font-FiraSans text-dark6">{card.short_description}</p>
+              <h3 className="card-title mb-4 text-dark2 text-xl font-semibold">
+                {card.recipe_name}
+              </h3>
+              <p className="font-FiraSans text-dark6">
+                {card.short_description}
+              </p>
               <hr className="my-4" />
-              <h3 className="text-dark2 mb-4 text-lg font-medium">Ingredients: {card.ingredients.length} </h3>
+              <h3 className="text-dark2 mb-4 text-lg font-medium">
+                Ingredients: {card.ingredients.length}{" "}
+              </h3>
               <ul className="font-FiraSans text-dark6">
                 {card.ingredients.map((item, idx) => (
-                  <li className="list-disc ml-6 mb-2" key={idx}>
+                  <li className="list-disc ml-8 mb-2" key={idx}>
                     {item}
                   </li>
                 ))}
@@ -42,16 +49,24 @@ const Card = () => {
                   <CiStopwatch></CiStopwatch> {card.preparing_time} minutes
                 </span>
                 <span className="flex items-center gap-1 text-base font-normal">
-                  <HiOutlineFire></HiOutlineFire> {card.calories}
+                  <HiOutlineFire></HiOutlineFire> {card.calories} calories
                 </span>
               </div>
-              <button className="btn btn-color">Want to Cook</button>
+              <button
+                onClick={() => addRecipeToQueue(card)}
+                className="btn btn-color"
+              >
+                Want to Cook
+              </button>
             </div>
           </div>
         ))}
       </div>
     </div>
   );
+};
+Card.propTypes = {
+  addRecipeToQueue: PropTypes.func,
 };
 
 export default Card;

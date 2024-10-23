@@ -1,5 +1,6 @@
 import Navbar from "./component/Navbar/Navbar";
 import Banner from "./component/Banner/Banner"
+import OurRecipes from "./component/OurRecipes/OurRecipes";
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
         <Navbar></Navbar>
         <Banner></Banner>
       </header>
+      <main>
+        <OurRecipes></OurRecipes>
+      </main>
     </>
   );
 }

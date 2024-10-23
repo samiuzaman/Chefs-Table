@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content text-lightDarkShade bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow "
           >
             <li>
               <a>Home</a>
@@ -38,15 +38,15 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="text-xl font-bold text-[#150B2B]">Recipe Calories</a>
+        <a className="text-2xl font-bold text-darkShade">Recipe Calories</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-lightDarkShade">
           <li>
             <a>Home</a>
           </li>
           <li>
-            <a className="bg-blue">Recipes</a>
+            <a>Recipes</a>
           </li>
           <li>
             <a>About</a>
@@ -56,7 +56,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end gap-4">
+      <div className="navbar-end gap-4 text-lightDarkShade">
         <label className="input input-bordered flex items-center gap-2 bg-[#150B2B0D] rounded-full h-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"

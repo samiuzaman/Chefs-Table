@@ -5,3 +5,13 @@
 body{
   @apply font-Lexend
 }
+.btn{
+  @apply  font-medium text-lg rounded-full
+}
+.btn-color{
+  @apply bg-btnBg text-darkShade
+}
+h2{
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
